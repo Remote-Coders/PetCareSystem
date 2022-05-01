@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+
+        android:title="@string/home" />
+    <item
+        android:id="@+id/payment"
+        android:icon="@drawable/ic_payment"
+
+        android:title="@string/payment" />
+    <item
+        android:id="@+id/food"
+        android:icon="@drawable/ic_food"
+
+        android:title="@string/feed_your_pet" />
+    <item
+        android:id="@+id/care"
+        android:icon="@drawable/ic_ads"
+
+        android:title="@string/care_your_pet" />
+    <item
+        android:id="@+id/account"
+        android:icon="@drawable/ic_account"
+
+        android:title="@string/string_account" />
+</menu>
