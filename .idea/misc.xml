@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/dilin/Desktop/MAD_PROJECT/PetCareSystem/app/src/main/res/drawable-v24/ic_account.xml" value="0.14322916666666666" />
+        <entry key="..\:/Users/dilin/Desktop/MAD_PROJECT/PetCareSystem/app/src/main/res/drawable/adminbtnview.xml" value="0.14322916666666666" />
+        <entry key="..\:/Users/dilin/Desktop/MAD_PROJECT/PetCareSystem/app/src/main/res/layout/activity_admin_add_pet_sitting.xml" value="0.1" />
+        <entry key="..\:/Users/dilin/Desktop/MAD_PROJECT/PetCareSystem/app/src/main/res/layout/activity_admin_view_pet_sitting.xml" value="0.136" />
         <entry key="..\:/Y2S2/MAD/RemoteCoders/app/src/main/res/drawable/foodbg.xml" value="0.2703125" />
         <entry key="..\:/Y2S2/MAD/RemoteCoders/app/src/main/res/drawable/ic_account.xml" value="0.2682291666666667" />
         <entry key="..\:/Y2S2/MAD/RemoteCoders/app/src/main/res/drawable/ic_food.xml" value="0.2682291666666667" />
