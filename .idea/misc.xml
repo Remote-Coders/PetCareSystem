@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/2yr 2sem/PetCareSystem/PetCareSystem/app/src/main/res/drawable/ic_paw.xml" value="0.2703125" />
+        <entry key="..\:/2yr 2sem/PetCareSystem/PetCareSystem/app/src/main/res/font/roboto_medium.xml" value="0.284375" />
+        <entry key="..\:/2yr 2sem/PetCareSystem/PetCareSystem/app/src/main/res/layout/activity_cart1.xml" value="0.25416666666666665" />
+        <entry key="..\:/2yr 2sem/PetCareSystem/PetCareSystem/app/src/main/res/layout/activity_pet3.xml" value="0.13020833333333334" />
+        <entry key="..\:/2yr 2sem/PetCareSystem/PetCareSystem/app/src/main/res/layout/activity_pet6.xml" value="0.1609375" />
         <entry key="..\:/Y2S2/MAD/RemoteCoders/app/src/main/res/drawable/foodbg.xml" value="0.2703125" />
         <entry key="..\:/Y2S2/MAD/RemoteCoders/app/src/main/res/drawable/ic_account.xml" value="0.2682291666666667" />
         <entry key="..\:/Y2S2/MAD/RemoteCoders/app/src/main/res/drawable/ic_food.xml" value="0.2682291666666667" />

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dogbg"
+    tools:context=".PetActivity6">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#081C34"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="411dp"
+        android:layout_height="49dp"
+        android:background="@color/black"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:srcCompat="@drawable/ic_baseline_menu_24" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="253dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="2dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintCircleRadius="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.804"
+        app:layout_constraintStart_toEndOf="@+id/imageView31"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.333"
+        tools:targetApi="s">
+
+    </SearchView>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView10"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/Circular"
+        app:srcCompat="@drawable/rab" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView11"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/Circular"
+        app:srcCompat="@drawable/cats" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView12"
+        android:layout_width="203dp"
+        android:layout_height="352dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.596"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/RoundedSquare"
+        app:srcCompat="@drawable/scrolldog" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView13"
+        android:layout_width="167dp"
+        android:layout_height="286dp"
+        android:layout_marginStart="350dp"
+        android:layout_marginTop="110dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:shapeAppearanceOverlay="@style/RoundedSquare"
+        app:srcCompat="@drawable/scrollrab" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+
+        android:id="@+id/imageView9"
+        android:layout_width="130dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/Circular"
+        app:srcCompat="@drawable/dooooo" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView15"
+        android:layout_width="167dp"
+        android:layout_height="285dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="312dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11"
+        app:shapeAppearanceOverlay="@style/RoundedSquare"
+        app:srcCompat="@drawable/scrollcat" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
