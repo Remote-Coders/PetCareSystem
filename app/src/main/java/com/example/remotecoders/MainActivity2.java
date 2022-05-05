@@ -23,12 +23,13 @@ public class MainActivity2 extends AppCompatActivity {
         adsBtn = findViewById(R.id.btn_Ads);
 
         adsBtn.setOnClickListener(new View.OnClickListener() {
-              @Override
-              public void onClick(View view) {
-                  Intent intent = new Intent(MainActivity2.this,AdminActivityAds.class);
-                  startActivity(intent);
-              }
-          }
+                                      @Override
+                                      public void onClick(View view) {
+                                          Intent intent = new Intent(MainActivity2.this, AdminActivityAds.class);
+                                          startActivity(intent);
+                                      }
+                                  }
+      );
 
         pets = findViewById(R.id.btn_pets);
         pets.setOnClickListener(new View.OnClickListener() {
