@@ -158,15 +158,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AdminActivityDeletePetSitting"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name=".AdminActivityUpdatePetSitting"
             android:exported="true">
             <intent-filter>
@@ -214,15 +205,6 @@
         </activity>
         <activity
             android:name=".AdminActivityViewVet"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".AdminActivityDeleteVet"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
