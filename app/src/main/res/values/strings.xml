@@ -51,8 +51,7 @@
     <string name="dog_food3">Chappi</string>
     <string name="old_price">$150.00</string>
     <string name="new_price">$50.30</string>
-    <string name="food_details">Meaw mix Original combines fun shapes and crunchy bites.
-      </string>
+    <string name="food_details">Meaw mix Original combines fun shapes and crunchy bites.</string>
     <string name="food_flavour">Rostisserie chicken flavor</string>
     <string name="add_cart">Add to cart</string>
     <string name="back">back</string>
@@ -127,5 +126,33 @@
     <string name="family_pet_kennel_pet_boarding">Family Pet Kennel (Pet Boarding )</string>
     <string name="crystal_kennels_dog_boarding">Crystal Kennels Dog Boarding</string>
     <string name="update_pet_sitting">Update Pet Sitting</string>
+    <string name="viewdog">View Dog</string>
+    <string name="dogade">Age</string>
+    <string name="gendog">Gender</string>
+    <string name="teldog">Tel</string>
+    <string name="updog">Update Dog</string>
+    <string name="namedog">Golden Retriever</string>
+    <string name="ages">3 months</string>
+    <string name="genderdog">Male</string>
+    <string name="coldog">Color</string>
+    <string name="dogcol">Light Dog</string>
+    <string name="locdog">Location</string>
+    <string name="addressdog">393/01,Boralesgamuwa</string>
+    <string name="contactdog">0718456877</string>
+    <string name="dogprice">Price</string>
+    <string name="dogpri">$300.30</string>
+    <string name="deldog">Delete Dog</string>
+    <string name="items">3 items</string>
+    <string name="cartp1">$32.30</string>
+    <string name="cartm">1x</string>
+    <string name="chappi">Chappi</string>
+    <string name="food3">Chicken and Rice</string>
+    <string name="dogname">Golden Retriever</string>
+    <string name="addrssdog">Boralesgamuwa</string>
+    <string name="cap2">$300.30</string>
+    <string name="dashbrd">Dashboard</string>
+    <string name="updatepet">Update Pet</string>
+    <string name="viewpet">View Pet</string>
+    <string name="dogadd">Add Dog</string>
 
 </resources>
