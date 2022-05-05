@@ -1,4 +1,4 @@
-package com.example.remotecoders;//package com.example.happytails;
+package com.example.remotecoders;
 //
 //import com.google.android.gms.tasks.Task;
 //import com.google.firebase.database.DatabaseReference;

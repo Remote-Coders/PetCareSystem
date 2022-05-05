@@ -1,5 +1,5 @@
-package com.example.remotecoders;//package com.example.happytails;
-//
+package com.example.remotecoders;
+
 //public class PetIn {
 //    private String name;
 //    private String age;
