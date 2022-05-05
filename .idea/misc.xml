@@ -59,9 +59,15 @@
         <entry key="..\:/Y2S2/MAD/RemoteCoders/app/src/main/res/layout/fragment_payment.xml" value="0.144" />
         <entry key="..\:/Y2S2/MAD/RemoteCoders/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2" />
         <entry key="..\:/mad_project/PetCareSystem/app/src/main/res/drawable/acountsetting.xml" value="0.18333333333333332" />
+        <entry key="..\:/mad_project/PetCareSystem/app/src/main/res/drawable/btnbg.xml" value="0.2203125" />
         <entry key="..\:/mad_project/PetCareSystem/app/src/main/res/drawable/buttonbg.xml" value="0.17962962962962964" />
         <entry key="..\:/mad_project/PetCareSystem/app/src/main/res/drawable/textbg.xml" value="0.17962962962962964" />
         <entry key="..\:/mad_project/PetCareSystem/app/src/main/res/layout/activity_accountsetting.xml" value="0.1213768115942029" />
+        <entry key="..\:/mad_project/PetCareSystem/app/src/main/res/layout/activity_care1.xml" value="0.25" />
+        <entry key="..\:/mad_project/PetCareSystem/app/src/main/res/layout/activity_care2.xml" value="0.19882246376811594" />
+        <entry key="..\:/mad_project/PetCareSystem/app/src/main/res/layout/activity_care3.xml" value="0.460093896713615" />
+        <entry key="..\:/mad_project/PetCareSystem/app/src/main/res/layout/activity_entercard.xml" value="0.19882246376811594" />
+        <entry key="..\:/mad_project/PetCareSystem/app/src/main/res/layout/activity_enterpay.xml" value="0.19882246376811594" />
         <entry key="..\:/mad_project/PetCareSystem/app/src/main/res/layout/activity_register.xml" value="0.1213768115942029" />
       </map>
     </option>
