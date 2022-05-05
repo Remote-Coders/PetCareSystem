@@ -155,6 +155,7 @@
         android:layout_height="41dp"
         android:background="@drawable/crd_btn"
         android:text="Add"
+        android:textAllCaps="false"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"

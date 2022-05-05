@@ -84,7 +84,7 @@
         android:layout_width="324dp"
         android:layout_height="77dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="26dp"
+        android:layout_marginTop="76dp"
         android:layout_marginEnd="10dp"
         android:background="@drawable/dash_btn"
         android:text="Add Dog"
@@ -100,45 +100,15 @@
         android:layout_width="324dp"
         android:layout_height="77dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="290dp"
+        android:layout_marginTop="396dp"
         android:layout_marginEnd="10dp"
         android:background="@drawable/dash_btn"
         android:text="View Dog"
         android:textAllCaps="false"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/toolbar" />
-
-    <Button
-        android:layout_width="324dp"
-        android:layout_height="77dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="390dp"
-        android:layout_marginEnd="10dp"
-        android:background="@drawable/dash_btn"
-        android:text="Update Dog"
-        android:textAllCaps="false"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/toolbar" />
-
-    <Button
-        android:layout_width="324dp"
-        android:layout_height="77dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="490dp"
-        android:layout_marginEnd="10dp"
-        android:background="@drawable/dash_btn"
-        android:text="Delete Dog"
-        android:textAllCaps="false"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.517"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
