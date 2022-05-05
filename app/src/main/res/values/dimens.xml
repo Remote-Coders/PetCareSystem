@@ -2,4 +2,5 @@
 <resources>
     <dimen name="btn_radius">10</dimen>
     <dimen name="icon_padding">2dp</dimen>
+    <dimen name="border">20</dimen>
 </resources>
