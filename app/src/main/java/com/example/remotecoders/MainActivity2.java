@@ -18,32 +18,28 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        adsBtn = findViewById(R.id.btn_Ads);
+        adsBtn = findViewById(R.id.btn_Ad);
 
         adsBtn.setOnClickListener(new View.OnClickListener() {
-                                      @Override
-                                      public void onClick(View view) {
-                                          Intent intent = new Intent(MainActivity2.this, AdminActivityAds.class);
-                                          startActivity(intent);
-                                      }
-                                  }
+              @Override
+              public void onClick(View view) {
+                  Intent intent = new Intent(MainActivity2.this, AdminActivityAds.class);
+                  startActivity(intent);
+              }
+          }
       );
 
-        pets = findViewById(R.id.btn_addfood);
+        pets = findViewById(R.id.btn_pets);
         pets.setOnClickListener(new View.OnClickListener() {
-                                      @Override
-                                      public void onClick(View view) {
-                                          Intent intent = new Intent(MainActivity2.this,DashActivity2.class);
-                                          startActivity(intent);
-                                      }
-                                  }
-
-
-
+              @Override
+              public void onClick(View view) {
+                  Intent intent = new Intent(MainActivity2.this,DashActivity2.class);
+                  startActivity(intent);
+              }
+          }
         );
 
-        foodbtn=findViewById(R.id.btn_view_food);
-
+        foodbtn=findViewById(R.id.btn_food);
         foodbtn.setOnClickListener(new View.OnClickListener() {
               @Override
               public void onClick(View view) {
