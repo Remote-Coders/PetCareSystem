@@ -16,14 +16,13 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         pets = findViewById(R.id.btn_pets);
         pets.setOnClickListener(new View.OnClickListener() {
-                                      @Override
-                                      public void onClick(View view) {
-                                          Intent intent = new Intent(MainActivity2.this,DashActivity2.class);
-                                          startActivity(intent);
-                                      }
-                                  }
+                  @Override
+                  public void onClick(View view) {
+                      Intent intent = new Intent(MainActivity2.this,DashActivity2.class);
+                      startActivity(intent);
+                  }
+              }
 
-
-        );
+      );
     }
 }

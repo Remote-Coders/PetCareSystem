@@ -88,4 +88,7 @@
     <string name="updatepet">Update Pet</string>
     <string name="viewpet">View Pet</string>
     <string name="dogadd">Add Dog</string>
+    <string name="dg">Dog</string>
+    <string name="ct">Cat</string>
+    <string name="rab">Rabbit</string>
 </resources>
