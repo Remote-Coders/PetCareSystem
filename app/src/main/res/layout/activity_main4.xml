@@ -46,6 +46,7 @@
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Ads"
         app:layout_constraintTop_toBottomOf="@+id/btn_update_food"
         app:layout_constraintVertical_bias="0.025" />
 
@@ -76,6 +77,18 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_add_food" />
 
     <Button
+        android:id="@+id/btn_Ads"
+        android:layout_width="305dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#8967AB"
+        android:text="@string/btn_food3"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+      <Button
         android:id="@+id/btn_update_food"
         android:layout_width="305dp"
         android:layout_height="81dp"

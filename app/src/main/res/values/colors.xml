@@ -12,4 +12,11 @@
     <color name="light_grey">#C4C4C4</color>
     <color name="category_box_color">#F0F0F0</color>
     <color name="background_purple">#8263A5</color>
+    <color name="lightGrey">#C4C4C4</color>
+    <color name="lightgreen">#29E8C5</color>
+    <color name="navyblue">#2458DB</color>
+    <color name="darkgrey">#aaaaaa</color>
+    <color name="darkgray">#80C4C4C4</color>
+
+
 </resources>
