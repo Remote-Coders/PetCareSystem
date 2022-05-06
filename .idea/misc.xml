@@ -3,11 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-
+        <entry key="..\:/2yr 2sem/PetCareSystem/PetCareSystem/app/src/main/res/drawable/ic_paw.xml" value="0.2703125" />
+        <entry key="..\:/2yr 2sem/PetCareSystem/PetCareSystem/app/src/main/res/font/roboto_medium.xml" value="0.284375" />
+        <entry key="..\:/2yr 2sem/PetCareSystem/PetCareSystem/app/src/main/res/layout/activity_cart1.xml" value="0.25416666666666665" />
+        <entry key="..\:/2yr 2sem/PetCareSystem/PetCareSystem/app/src/main/res/layout/activity_dash1.xml" value="0.25416666666666665" />
+        <entry key="..\:/2yr 2sem/PetCareSystem/PetCareSystem/app/src/main/res/layout/activity_main2.xml" value="0.25416666666666665" />
+        <entry key="..\:/2yr 2sem/PetCareSystem/PetCareSystem/app/src/main/res/layout/activity_pet2.xml" value="0.25416666666666665" />
+        <entry key="..\:/2yr 2sem/PetCareSystem/PetCareSystem/app/src/main/res/layout/activity_pet3.xml" value="0.264" />
+        <entry key="..\:/2yr 2sem/PetCareSystem/PetCareSystem/app/src/main/res/layout/activity_pet6.xml" value="0.1609375" />
         <entry key="..\:/Users/dilin/Desktop/MAD_PROJECT/PetCareSystem/app/src/main/res/drawable-v24/ic_account.xml" value="0.14322916666666666" />
         <entry key="..\:/Users/dilin/Desktop/MAD_PROJECT/PetCareSystem/app/src/main/res/drawable/adminbtnview.xml" value="0.14322916666666666" />
-
-        <entry key="..\:/Users/dilin/Desktop/MAD_PROJECT/PetCareSystem/app/src/main/res/layout/activity_admin_add_pet_sitting.xml" value="0.2" />
+        <entry key="..\:/Users/dilin/Desktop/MAD_PROJECT/PetCareSystem/app/src/main/res/layout/activity_admin_add_pet_sitting.xml" value="0.1" />
         <entry key="..\:/Users/dilin/Desktop/MAD_PROJECT/PetCareSystem/app/src/main/res/layout/activity_admin_add_vet.xml" value="0.25" />
         <entry key="..\:/Users/dilin/Desktop/MAD_PROJECT/PetCareSystem/app/src/main/res/layout/activity_admin_ads.xml" value="0.23731884057971014" />
         <entry key="..\:/Users/dilin/Desktop/MAD_PROJECT/PetCareSystem/app/src/main/res/layout/activity_admin_delete_pet_sitting.xml" value="0.25" />
@@ -16,7 +22,7 @@
         <entry key="..\:/Users/dilin/Desktop/MAD_PROJECT/PetCareSystem/app/src/main/res/layout/activity_admin_update_pet_sitting.xml" value="0.25" />
         <entry key="..\:/Users/dilin/Desktop/MAD_PROJECT/PetCareSystem/app/src/main/res/layout/activity_admin_update_vet.xml" value="0.25" />
         <entry key="..\:/Users/dilin/Desktop/MAD_PROJECT/PetCareSystem/app/src/main/res/layout/activity_admin_vet_crud.xml" value="0.25" />
-        <entry key="..\:/Users/dilin/Desktop/MAD_PROJECT/PetCareSystem/app/src/main/res/layout/activity_admin_view_pet_sitting.xml" value="0.1" />
+        <entry key="..\:/Users/dilin/Desktop/MAD_PROJECT/PetCareSystem/app/src/main/res/layout/activity_admin_view_pet_sitting.xml" value="0.136" />
         <entry key="..\:/Users/dilin/Desktop/MAD_PROJECT/PetCareSystem/app/src/main/res/layout/activity_admin_view_vet.xml" value="0.2" />
         <entry key="..\:/Users/dilin/Desktop/MAD_PROJECT/PetCareSystem/app/src/main/res/layout/activity_care1.xml" value="0.23731884057971014" />
         <entry key="..\:/Users/dilin/Desktop/MAD_PROJECT/PetCareSystem/app/src/main/res/layout/activity_care2.xml" value="0.23731884057971014" />
@@ -28,19 +34,6 @@
         <entry key="..\:/Users/dilin/Desktop/MAD_PROJECT/PetCareSystem/app/src/main/res/layout/activity_main2.xml" value="0.23731884057971014" />
         <entry key="..\:/Users/dilin/Desktop/MAD_PROJECT/PetCareSystem/app/src/main/res/layout/activity_main4.xml" value="0.23731884057971014" />
         <entry key="..\:/Users/dilin/Desktop/MAD_PROJECT/PetCareSystem/app/src/main/res/layout/activity_main7.xml" value="0.23731884057971014" />
-
-        <entry key="..\:/Users/dilin/Desktop/MAD_PROJECT/PetCareSystem/app/src/main/res/layout/activity_admin_add_pet_sitting.xml" value="0.1" />
-        <entry key="..\:/Users/dilin/Desktop/MAD_PROJECT/PetCareSystem/app/src/main/res/layout/activity_admin_view_pet_sitting.xml" value="0.136" />
-
-        <entry key="..\:/2yr 2sem/PetCareSystem/PetCareSystem/app/src/main/res/drawable/ic_paw.xml" value="0.2703125" />
-        <entry key="..\:/2yr 2sem/PetCareSystem/PetCareSystem/app/src/main/res/font/roboto_medium.xml" value="0.284375" />
-        <entry key="..\:/2yr 2sem/PetCareSystem/PetCareSystem/app/src/main/res/layout/activity_cart1.xml" value="0.25416666666666665" />
-        <entry key="..\:/2yr 2sem/PetCareSystem/PetCareSystem/app/src/main/res/layout/activity_dash1.xml" value="0.25416666666666665" />
-        <entry key="..\:/2yr 2sem/PetCareSystem/PetCareSystem/app/src/main/res/layout/activity_main2.xml" value="0.25416666666666665" />
-        <entry key="..\:/2yr 2sem/PetCareSystem/PetCareSystem/app/src/main/res/layout/activity_pet2.xml" value="0.25416666666666665" />
-        <entry key="..\:/2yr 2sem/PetCareSystem/PetCareSystem/app/src/main/res/layout/activity_pet3.xml" value="0.264" />
-        <entry key="..\:/2yr 2sem/PetCareSystem/PetCareSystem/app/src/main/res/layout/activity_pet6.xml" value="0.1609375" />
-
         <entry key="..\:/Y2S2/MAD/RemoteCoders/app/src/main/res/drawable/foodbg.xml" value="0.2703125" />
         <entry key="..\:/Y2S2/MAD/RemoteCoders/app/src/main/res/drawable/ic_account.xml" value="0.2682291666666667" />
         <entry key="..\:/Y2S2/MAD/RemoteCoders/app/src/main/res/drawable/ic_food.xml" value="0.2682291666666667" />
@@ -65,6 +58,17 @@
         <entry key="..\:/Y2S2/MAD/RemoteCoders/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/Y2S2/MAD/RemoteCoders/app/src/main/res/layout/fragment_payment.xml" value="0.144" />
         <entry key="..\:/Y2S2/MAD/RemoteCoders/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2" />
+        <entry key="..\:/mad_project/PetCareSystem/app/src/main/res/drawable/acountsetting.xml" value="0.18333333333333332" />
+        <entry key="..\:/mad_project/PetCareSystem/app/src/main/res/drawable/btnbg.xml" value="0.2203125" />
+        <entry key="..\:/mad_project/PetCareSystem/app/src/main/res/drawable/buttonbg.xml" value="0.17962962962962964" />
+        <entry key="..\:/mad_project/PetCareSystem/app/src/main/res/drawable/textbg.xml" value="0.17962962962962964" />
+        <entry key="..\:/mad_project/PetCareSystem/app/src/main/res/layout/activity_accountsetting.xml" value="0.1213768115942029" />
+        <entry key="..\:/mad_project/PetCareSystem/app/src/main/res/layout/activity_care1.xml" value="0.25" />
+        <entry key="..\:/mad_project/PetCareSystem/app/src/main/res/layout/activity_care2.xml" value="0.19882246376811594" />
+        <entry key="..\:/mad_project/PetCareSystem/app/src/main/res/layout/activity_care3.xml" value="0.460093896713615" />
+        <entry key="..\:/mad_project/PetCareSystem/app/src/main/res/layout/activity_entercard.xml" value="0.19882246376811594" />
+        <entry key="..\:/mad_project/PetCareSystem/app/src/main/res/layout/activity_enterpay.xml" value="0.19882246376811594" />
+        <entry key="..\:/mad_project/PetCareSystem/app/src/main/res/layout/activity_register.xml" value="0.1213768115942029" />
       </map>
     </option>
   </component>

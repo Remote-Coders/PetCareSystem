@@ -16,4 +16,7 @@
     <color name="lightgreen">#29E8C5</color>
     <color name="navyblue">#2458DB</color>
     <color name="darkgrey">#aaaaaa</color>
+    <color name="darkgray">#80C4C4C4</color>
+
+
 </resources>
