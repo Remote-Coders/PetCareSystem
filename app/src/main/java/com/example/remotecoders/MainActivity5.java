@@ -33,6 +33,7 @@ public class MainActivity5 extends AppCompatActivity {
         foodobj=new Food();
 
     }
+
     //Method to clear all user inputs
     public void clearControls(){
         edit_category.setText("");

@@ -154,7 +154,6 @@
     <string name="updatepet">Update Pet</string>
     <string name="viewpet">View Pet</string>
     <string name="dogadd">Add Dog</string>
-
     <string name="user_name">User Name</string>
     <string name="register">REGISTER</string>
     <string name="password">Password</string>
@@ -165,6 +164,5 @@
     <string name="enter_old_password">Enter Old Password</string>
     <string name="login_in">LOGIN IN</string>
     <string name="welcome_back">WELCOME BACK</string>
-
 
 </resources>
