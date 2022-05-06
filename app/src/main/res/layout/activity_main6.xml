@@ -283,7 +283,7 @@
             app:srcCompat="@drawable/cf1" />
 
         <ImageView
-            android:id="@+id/delImg3"
+            android:id="@+id/imgview_image"
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:layout_below="@+id/tv_price3"
