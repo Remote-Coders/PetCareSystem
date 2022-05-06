@@ -162,7 +162,7 @@
         app:layout_constraintTop_toBottomOf="@+id/delImg2" />
 
     <ImageView
-        android:id="@+id/delImg3"
+        android:id="@+id/imgview_image"
         android:layout_width="61dp"
         android:layout_height="54dp"
         app:layout_constraintBottom_toBottomOf="@+id/delImg2"
@@ -177,6 +177,7 @@
         android:layout_height="46dp"
         android:layout_marginTop="15dp"
         android:backgroundTint="@color/light_black"
+        android:onClick="CreateData"
         android:text="@string/btn_add"
         android:textSize="20sp"
         app:cornerRadius="?attr/listPreferredItemPaddingLeft"
@@ -187,7 +188,7 @@
         app:layout_constraintVertical_bias="0.015" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/et_category"
         android:layout_width="167dp"
         android:layout_height="45dp"
         android:backgroundTint="@color/light_grey"
@@ -201,7 +202,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/et_foodname"
         android:layout_width="166dp"
         android:layout_height="42dp"
         android:backgroundTint="@color/light_grey"
@@ -213,7 +214,7 @@
         app:layout_constraintTop_toTopOf="@+id/im_name" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/et_price"
         android:layout_width="161dp"
         android:layout_height="40dp"
         android:backgroundTint="@color/light_grey"
@@ -225,7 +226,7 @@
         app:layout_constraintTop_toTopOf="@+id/bigImg2" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/et_fooddescription"
         android:layout_width="271dp"
         android:layout_height="50dp"
         android:backgroundTint="@color/light_grey"

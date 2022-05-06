@@ -36,7 +36,7 @@
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <Button
-        android:id="@+id/btn_pets"
+        android:id="@+id/btn_add_food"
         android:layout_width="305dp"
         android:layout_height="81dp"
         android:layout_marginTop="68dp"
@@ -49,7 +49,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_dashboard" />
 
     <Button
-        android:id="@+id/btn_foods"
+        android:id="@+id/btn_view_food"
         android:layout_width="305dp"
         android:layout_height="81dp"
         android:layout_marginTop="50dp"
@@ -59,10 +59,10 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_pets" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_add_food" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btn_update_food"
         android:layout_width="305dp"
         android:layout_height="81dp"
         android:layout_marginTop="50dp"
@@ -73,7 +73,7 @@
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_foods"
+        app:layout_constraintTop_toBottomOf="@+id/btn_view_food"
         app:layout_constraintVertical_bias="0.017" />
 
     <androidx.appcompat.widget.Toolbar
