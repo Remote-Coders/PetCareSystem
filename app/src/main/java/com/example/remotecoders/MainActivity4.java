@@ -16,7 +16,7 @@ public class MainActivity4 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main4);
-        addfoodbtn=findViewById(R.id.btn_addfood);
+        addfoodbtn=findViewById(R.id.btn_add_food);
         viewfoodbtn=findViewById(R.id.btn_view_food);
         updatefoodbtn=findViewById(R.id.btn_update_food);
         deletefoodbtn=findViewById(R.id.btn_delete_food);
