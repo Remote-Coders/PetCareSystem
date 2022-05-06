@@ -74,7 +74,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_add_food"
+        android:id="@+id/btn_addfood"
         android:layout_width="305dp"
         android:layout_height="81dp"
         android:layout_marginTop="50dp"
@@ -97,12 +97,11 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_add_food" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_addfood" />
 
     <Button
 
         android:id="@+id/btn_Ads"
-        android:id="@+id/btn_update_food"
         android:layout_width="305dp"
         android:layout_height="81dp"
         android:layout_marginTop="50dp"

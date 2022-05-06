@@ -9,9 +9,7 @@ import android.widget.Button;
 
 public class MainActivity2 extends AppCompatActivity {
     Button foodbtn;
-
     Button adsBtn;
-
     Button pets;
 
 
@@ -31,7 +29,7 @@ public class MainActivity2 extends AppCompatActivity {
                                   }
       );
 
-        pets = findViewById(R.id.btn_pets);
+        pets = findViewById(R.id.btn_addfood);
         pets.setOnClickListener(new View.OnClickListener() {
                                       @Override
                                       public void onClick(View view) {
