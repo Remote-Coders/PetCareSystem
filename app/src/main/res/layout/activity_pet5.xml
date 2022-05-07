@@ -161,7 +161,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/btn_vetadd"
         android:layout_width="83dp"
         android:layout_height="39dp"
         android:layout_marginTop="48dp"

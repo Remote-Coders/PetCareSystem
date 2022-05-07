@@ -155,6 +155,7 @@
     <string name="viewpet">View Pet</string>
     <string name="dogadd">Add Dog</string>
 
+
     <string name="dg">Dog</string>
     <string name="ct">Cat</string>
     <string name="rab">Rabbit</string>
@@ -172,6 +173,5 @@
     <string name="welcome_back">WELCOME BACK</string>
     <string name="btn_upload">Upload</string>
     <string name="btn_browse">Browse</string>
-
 
 </resources>

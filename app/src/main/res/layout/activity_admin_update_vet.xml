@@ -182,7 +182,7 @@
     </ImageView>
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/btn_vetadd"
         android:layout_width="152sp"
         android:layout_height="50sp"
         android:layout_marginStart="16dp"
