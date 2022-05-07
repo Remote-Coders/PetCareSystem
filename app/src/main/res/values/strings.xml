@@ -155,6 +155,11 @@
     <string name="viewpet">View Pet</string>
     <string name="dogadd">Add Dog</string>
 
+    <string name="dg">Dog</string>
+    <string name="ct">Cat</string>
+    <string name="rab">Rabbit</string>
+
+
     <string name="user_name">User Name</string>
     <string name="register">REGISTER</string>
     <string name="password">Password</string>
