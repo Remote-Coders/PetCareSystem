@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1002193370751",
+    "firebase_url": "https://remotecoders-d3b5a-default-rtdb.firebaseio.com",
+    "project_id": "remotecoders-d3b5a",
+    "storage_bucket": "remotecoders-d3b5a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1002193370751:android:8a35a748128321534dc94a",
+        "android_client_info": {
+          "package_name": "com.example.remotecoders"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1002193370751-b4fdjhflj045k1884bu8ke7ldi5eooc3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVkKu3wOSoxzzp3vczw8n2RLJ7pM37onE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1002193370751-b4fdjhflj045k1884bu8ke7ldi5eooc3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
