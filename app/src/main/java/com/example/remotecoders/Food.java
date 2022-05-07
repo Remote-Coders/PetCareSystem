@@ -3,7 +3,7 @@ package com.example.remotecoders;
 public class Food {
     private String category;
     private String name;
-    private String price;
+    private Integer price;
     private String description;
 
     public Food() {}
@@ -24,11 +24,11 @@ public class Food {
         this.name = name;
     }
 
-    public String getPrice() {
+    public Integer getPrice() {
         return price;
     }
 
-    public void setPrice(String price) {
+    public void setPrice(Integer price) {
         this.price = price;
     }
 
