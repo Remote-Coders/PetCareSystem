@@ -165,6 +165,8 @@
     <string name="enter_old_password">Enter Old Password</string>
     <string name="login_in">LOGIN IN</string>
     <string name="welcome_back">WELCOME BACK</string>
+    <string name="btn_upload">Upload</string>
+    <string name="btn_browse">Browse</string>
 
 
 </resources>
