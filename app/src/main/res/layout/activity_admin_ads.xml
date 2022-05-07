@@ -61,16 +61,17 @@
         app:srcCompat="@drawable/ic_baseline_menu_24" />
 
     <RelativeLayout
+        android:id="@+id/btn_petSitting"
         android:layout_width="333dp"
         android:layout_height="184dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/adminbtnview"
-        app:layout_constraintEnd_toEndOf="parent"
 
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout5">
+        app:layout_constraintTop_toBottomOf="@+id/btn_addvet">
 
         <TextView
             android:id="@+id/textView24"
@@ -90,7 +91,7 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/relativeLayout5"
+        android:id="@+id/btn_addvet"
         android:layout_width="333dp"
         android:layout_height="184dp"
         android:layout_marginStart="8dp"

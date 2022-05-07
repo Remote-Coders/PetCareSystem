@@ -93,23 +93,7 @@
         android:layout_marginEnd="44dp"
         android:background="@drawable/textbg"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.968"
-        app:layout_constraintStart_toEndOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/bigImg2"
-        tools:ignore="ImageContrastCheck" />
-
-    <ImageView
-        android:id="@+id/bigImg3"
-        android:layout_width="318dp"
-        android:layout_height="71dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="44dp"
-        android:background="@drawable/textbg"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
         tools:ignore="ImageContrastCheck" />
 
     <TextView
@@ -153,6 +137,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
+        android:layout_marginTop="12dp"
         android:text="@string/food_description"
         android:textColor="#3E2723"
         android:textSize="24sp"
@@ -162,7 +147,7 @@
         app:layout_constraintTop_toBottomOf="@+id/delImg2" />
 
     <ImageView
-        android:id="@+id/delImg3"
+        android:id="@+id/imgview_image"
         android:layout_width="61dp"
         android:layout_height="54dp"
         app:layout_constraintBottom_toBottomOf="@+id/delImg2"
@@ -172,22 +157,53 @@
         app:srcCompat="@drawable/ic_baseline_add_a_photo_24" />
 
     <Button
+        android:id="@+id/btn_upload"
+        android:layout_width="71dp"
+        android:layout_height="38dp"
+        android:backgroundTint="@color/light_black"
+        android:text="@string/btn_upload"
+        android:textSize="8sp"
+        app:cornerRadius="?attr/listPreferredItemPaddingLeft"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toStartOf="@+id/delImg2"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/btn_browse"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_browse"
+        android:layout_width="71dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/light_black"
+        android:text="@string/btn_browse"
+        android:textSize="8sp"
+        app:cornerRadius="?attr/listPreferredItemPaddingLeft"
+        app:layout_constraintEnd_toStartOf="@+id/delImg2"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/bigImg2" />
+
+    <Button
         android:id="@+id/btn_add"
         android:layout_width="120dp"
         android:layout_height="46dp"
         android:layout_marginTop="15dp"
         android:backgroundTint="@color/light_black"
+        android:onClick="CreateData"
         android:text="@string/btn_add"
         android:textSize="20sp"
         app:cornerRadius="?attr/listPreferredItemPaddingLeft"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bigImg3"
-        app:layout_constraintVertical_bias="0.015" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/et_category"
         android:layout_width="167dp"
         android:layout_height="45dp"
         android:backgroundTint="@color/light_grey"
@@ -201,7 +217,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/et_foodname"
         android:layout_width="166dp"
         android:layout_height="42dp"
         android:backgroundTint="@color/light_grey"
@@ -213,7 +229,7 @@
         app:layout_constraintTop_toTopOf="@+id/im_name" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/et_price"
         android:layout_width="161dp"
         android:layout_height="40dp"
         android:backgroundTint="@color/light_grey"
@@ -225,7 +241,7 @@
         app:layout_constraintTop_toTopOf="@+id/bigImg2" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/et_fooddescription"
         android:layout_width="271dp"
         android:layout_height="50dp"
         android:backgroundTint="@color/light_grey"
@@ -233,8 +249,24 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="@+id/bigImg3"
         app:layout_constraintEnd_toEndOf="@+id/bigImg3"
+        app:layout_constraintHorizontal_bias="0.468"
         app:layout_constraintStart_toStartOf="@+id/bigImg3"
-        app:layout_constraintTop_toTopOf="@+id/bigImg3" />
+        app:layout_constraintTop_toTopOf="@+id/bigImg3"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <ImageView
+        android:id="@+id/bigImg3"
+        android:layout_width="318dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/textbg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        tools:ignore="ImageContrastCheck" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"

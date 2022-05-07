@@ -63,7 +63,7 @@
 
 
     <RelativeLayout
-        android:id="@+id/relativeLayout"
+        android:id="@+id/vetview1"
         android:layout_width="342sp"
         android:layout_height="110sp"
         android:layout_marginBottom="8dp"
@@ -150,7 +150,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+        app:layout_constraintTop_toBottomOf="@+id/vetview1">
 
         <TextView
             android:layout_width="122dp"
@@ -381,7 +381,7 @@
         android:text="@string/view_vet"
         android:textColor="@color/white"
         android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintBottom_toTopOf="@+id/vetview1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

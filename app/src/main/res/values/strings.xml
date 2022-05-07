@@ -154,7 +154,24 @@
     <string name="updatepet">Update Pet</string>
     <string name="viewpet">View Pet</string>
     <string name="dogadd">Add Dog</string>
+
     <string name="dg">Dog</string>
     <string name="ct">Cat</string>
     <string name="rab">Rabbit</string>
+
+
+    <string name="user_name">User Name</string>
+    <string name="register">REGISTER</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="new_password">New Password</string>
+    <string name="mobile">Mobile</string>
+    <string name="enter_new_password">Enter New Password</string>
+    <string name="enter_old_password">Enter Old Password</string>
+    <string name="login_in">LOGIN IN</string>
+    <string name="welcome_back">WELCOME BACK</string>
+    <string name="btn_upload">Upload</string>
+    <string name="btn_browse">Browse</string>
+
+
 </resources>

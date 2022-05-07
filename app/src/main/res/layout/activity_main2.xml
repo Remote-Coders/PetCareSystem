@@ -87,7 +87,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_dashboard" />
 
     <Button
-        android:id="@+id/btn_foods"
+        android:id="@+id/btn_food"
         android:layout_width="305dp"
         android:layout_height="81dp"
         android:layout_marginTop="50dp"
@@ -100,7 +100,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_pets" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btn_Ad"
         android:layout_width="305dp"
         android:layout_height="81dp"
         android:layout_marginTop="50dp"
@@ -111,7 +111,7 @@
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_foods"
+        app:layout_constraintTop_toBottomOf="@+id/btn_food"
         app:layout_constraintVertical_bias="0.017" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

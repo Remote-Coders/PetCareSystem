@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome"
+    tools:context=".welcome">
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="85dp"
+        android:text="WELCOME"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="456dp"
+        android:layout_marginRight="85dp"
+        android:background="@drawable/textbg"
+        android:text="LOGIN IN"
+        android:textAlignment="center"
+        android:textColor="#80FFFFFF"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:background="@drawable/buttonbg"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginRight="85dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="CREATE ACCOUNT"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"></TextView>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,6 +7,44 @@
     android:background="@drawable/bgcare"
     tools:context=".AdminActivityUpdatePetSitting">
 
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="150sp"
+        android:layout_height="90sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/inputbg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="35dp"
+        android:layout_height="34dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView25"
+        app:layout_constraintEnd_toEndOf="@+id/imageView25"
+        app:layout_constraintStart_toStartOf="@+id/imageView25"
+        app:layout_constraintTop_toTopOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.456"
+        app:srcCompat="@drawable/ic_baseline_add_a_photo_24" />
+
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="35dp"
+        android:layout_height="34dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView24"
+        app:layout_constraintEnd_toEndOf="@+id/imageView24"
+        app:layout_constraintStart_toStartOf="@+id/imageView24"
+        app:layout_constraintTop_toTopOf="@+id/imageView24"
+        app:layout_constraintVertical_bias="0.456"
+        app:srcCompat="@drawable/ic_person_add" />
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
@@ -93,12 +131,12 @@
         android:id="@+id/imageView7"
         android:layout_width="171sp"
         android:layout_height="39sp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/inputbg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.829"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView32">
+        app:layout_constraintTop_toBottomOf="@+id/imageView25">
 
     </ImageView>
 
@@ -170,38 +208,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView11" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName4"
-        android:layout_width="171dp"
-        android:layout_height="40dp"
-        android:backgroundTint="@color/lightGrey"
-        android:ems="10"
-        android:text="@string/kaduwela"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
-        app:layout_constraintEnd_toEndOf="@+id/imageView8"
-        app:layout_constraintStart_toStartOf="@+id/imageView8"
-        app:layout_constraintTop_toTopOf="@+id/imageView8" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName9"
-        android:layout_width="167dp"
-        android:layout_height="59dp"
-        android:backgroundTint="@color/lightGrey"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/_463_29_nature_breeze_welivita_rd_kaduwela_10640"
-        android:textSize="16sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView10"
-        app:layout_constraintEnd_toEndOf="@+id/imageView11"
-        app:layout_constraintStart_toStartOf="@+id/imageView11" />
-
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:text="@string/name"
         android:textSize="26sp"
@@ -209,7 +220,7 @@
         app:layout_constraintEnd_toStartOf="@+id/imageView7"
         app:layout_constraintHorizontal_bias="0.265"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView32" />
+        tools:layout_editor_absoluteY="223dp" />
 
     <TextView
         android:id="@+id/textView6"
@@ -285,68 +296,6 @@
         app:layout_constraintHorizontal_bias="0.328"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
-
-    <EditText
-        android:id="@+id/editTextPhone"
-        android:layout_width="169dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="2dp"
-        android:backgroundTint="@color/lightGrey"
-        android:ems="10"
-        android:inputType="phone"
-        android:text="@string/_077_245_7833"
-        android:textSize="16sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView8"
-        app:layout_constraintEnd_toEndOf="@+id/imageView6"
-        app:layout_constraintStart_toStartOf="@+id/imageView6" />
-
-    <EditText
-        android:id="@+id/editTextTime"
-        android:layout_width="166dp"
-        android:layout_height="33dp"
-        android:background="@color/lightGrey"
-        android:ems="10"
-        android:text="@string/open_8am_4pm"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView9"
-        app:layout_constraintEnd_toEndOf="@+id/imageView9"
-        app:layout_constraintStart_toStartOf="@+id/imageView9"
-        app:layout_constraintTop_toTopOf="@+id/imageView9" />
-
-    <EditText
-        android:id="@+id/editTextTime2"
-        android:layout_width="167dp"
-        android:layout_height="32dp"
-        android:background="@color/lightGrey"
-        android:ems="10"
-        android:text="@string/open_6am_8pm"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
-        app:layout_constraintEnd_toEndOf="@+id/imageView10"
-        app:layout_constraintStart_toStartOf="@+id/imageView10"
-        app:layout_constraintTop_toTopOf="@+id/imageView10" />
-
-    <ImageView
-        android:id="@+id/imageView32"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView7"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:srcCompat="@drawable/p8" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="138dp"
-        android:layout_height="41dp"
-        android:text="@string/family_pet_kennel_pet_boarding"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
-        app:layout_constraintEnd_toEndOf="@+id/imageView7"
-        app:layout_constraintHorizontal_bias="0.09"
-        app:layout_constraintStart_toStartOf="@+id/imageView7"
-        app:layout_constraintTop_toTopOf="@+id/imageView7"
-        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
