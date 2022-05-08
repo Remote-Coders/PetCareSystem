@@ -49,11 +49,11 @@ public class MainActivity5 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main5);
-        edit_category=findViewById(R.id.et_category);
-        edit_name=findViewById(R.id.et_foodname);
-        edit_price=findViewById(R.id.et_price);
-        edit_description=findViewById(R.id.et_fooddescription);
-        edit_imgurl=findViewById(R.id.et_imgurl);
+        edit_category=findViewById(R.id.up_category);
+        edit_name=findViewById(R.id.up_foodname);
+        edit_price=findViewById(R.id.up_price);
+        edit_description=findViewById(R.id.up_fooddescription);
+        edit_imgurl=findViewById(R.id.up_imgurl);
         btn_add=findViewById(R.id.btn_browse);
         img=(ImageView)findViewById(R.id.imgview_image);
         btn_upload=(Button)findViewById(R.id.btn_upload);

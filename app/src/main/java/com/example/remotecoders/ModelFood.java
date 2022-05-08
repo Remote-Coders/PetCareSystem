@@ -1,16 +1,26 @@
 package com.example.remotecoders;
 
 public class ModelFood {
+    private String category;
     private String name;
-    private String description;
     private Integer price;
+    private String description;
     private String imgurl;
 
-    public ModelFood(String name, String description, Integer price, String imgurl) {
+    public ModelFood(String category, String name, Integer price, String description, String imgurl) {
+        this.category = category;
         this.name = name;
-        this.description = description;
         this.price = price;
+        this.description = description;
         this.imgurl = imgurl;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
     }
 
     public String getName() {
@@ -21,6 +31,14 @@ public class ModelFood {
         this.name = name;
     }
 
+    public Integer getPrice() {
+        return price;
+    }
+
+    public void setPrice(Integer price) {
+        this.price = price;
+    }
+
     public String getDescription() {
         return description;
     }
@@ -29,12 +47,7 @@ public class ModelFood {
         this.description = description;
     }
 
-    public Integer getPrice() {
-        return price;
-    }
-
-    public void setPrice(Integer price) {
-        this.price = price;
+    public ModelFood() {
     }
 
     public String getImgurl() {
@@ -44,16 +57,4 @@ public class ModelFood {
     public void setImgurl(String imgurl) {
         this.imgurl = imgurl;
     }
-
-    public ModelFood() {
-    }
-
-    public ModelFood(String name, String description, int price, String imgurl) {
-        this.name = name;
-        this.description = description;
-        this.price = price;
-        this.imgurl = imgurl;
-    }
-
-
 }

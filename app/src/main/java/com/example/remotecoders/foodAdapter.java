@@ -6,6 +6,8 @@ import android.content.DialogInterface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -15,7 +17,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.FirebaseDatabase;
+import com.orhanobut.dialogplus.DialogPlus;
+import com.orhanobut.dialogplus.ViewHolder;
+
+import java.util.HashMap;
+import java.util.Map;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -34,6 +43,63 @@ public class foodAdapter extends FirebaseRecyclerAdapter<ModelFood,foodAdapter.f
         holder.food_t2.setText(model.getDescription());
         holder.food_t3.setText(String.valueOf(model.getPrice()));
         Glide.with(holder.food_img.getContext()).load(model.getImgurl()).into(holder.food_img);
+
+        holder.editbtn.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                final DialogPlus dialogPlus=DialogPlus.newDialog(holder.food_img.getContext())
+                        .setContentHolder(new ViewHolder(R.layout.food_update_popup))
+
+                        .create();
+
+                View myview=dialogPlus.getHolderView();
+                final EditText category=myview.findViewById(R.id.up_category);
+                final EditText name=myview.findViewById(R.id.up_foodname);
+                final EditText price=myview.findViewById(R.id.up_price);
+                final EditText description=myview.findViewById(R.id.up_fooddescription);
+               final EditText imageurl=myview.findViewById(R.id.up_imgurl);
+
+                Button btn_foodupdate =myview.findViewById(R.id.btn_foodupdate);
+
+                category.setText(model.getName());
+                name.setText(model.getName());
+                price.setText(String.valueOf(model.getPrice()));
+                description.setText(model.getDescription());
+                imageurl.setText(model.getImgurl());
+
+                dialogPlus.show();
+
+                btn_foodupdate.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Map<String,Object> map=new HashMap<>();
+                        map.put("category",category.getText().toString());
+                        map.put("name",name.getText().toString());
+                        map.put("description",description.getText().toString());
+                        map.put("price",Integer.parseInt(price.getText().toString()));
+                        map.put("imageurl",imageurl.getText().toString());
+
+                        FirebaseDatabase.getInstance().getReference().child("Food")
+                                .child(getRef(position).getKey()).updateChildren(map)
+                                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                    @Override
+                                    public void onSuccess(Void aVoid) {
+                                        dialogPlus.dismiss();
+                                    }
+                                })
+                                .addOnFailureListener(new OnFailureListener() {
+                                    @Override
+                                    public void onFailure(@NonNull Exception e) {
+                                        dialogPlus.dismiss();
+                                    }
+                                });
+                    }
+                });
+
+
+            }
+        });
 
         holder.dltbtn.setOnClickListener(new View.OnClickListener() {
             @Override
