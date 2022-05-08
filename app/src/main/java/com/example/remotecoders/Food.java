@@ -5,6 +5,15 @@ public class Food {
     private String name;
     private Integer price;
     private String description;
+    private String imgurl;
+
+    public String getImgurl() {
+        return imgurl;
+    }
+
+    public void setImgurl(String imgurl) {
+        this.imgurl = imgurl;
+    }
 
     public Food() {}
 

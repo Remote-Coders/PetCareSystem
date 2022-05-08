@@ -42,7 +42,7 @@
         android:layout_marginTop="25dp"
         android:text="@string/food_category"
         android:textColor="#3E2723"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_delete" />
 
@@ -50,7 +50,7 @@
         android:id="@+id/im_category"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="44dp"
         android:background="@drawable/textbg"
         app:layout_constraintEnd_toEndOf="parent"
@@ -63,7 +63,7 @@
         android:id="@+id/im_name"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="44dp"
         android:background="@drawable/textbg"
         app:layout_constraintEnd_toEndOf="parent"
@@ -76,7 +76,7 @@
         android:id="@+id/bigImg2"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="44dp"
         android:background="@drawable/textbg"
         app:layout_constraintEnd_toEndOf="parent"
@@ -86,10 +86,21 @@
         tools:ignore="ImageContrastCheck" />
 
     <ImageView
+        android:id="@+id/bigImg"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/textbg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delImg2"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
         android:id="@+id/delImg2"
         android:layout_width="89dp"
         android:layout_height="73dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="44dp"
         android:background="@drawable/textbg"
         app:layout_constraintEnd_toEndOf="parent"
@@ -104,7 +115,7 @@
         android:layout_marginTop="40dp"
         android:text="@string/food_name"
         android:textColor="#3E2723"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -116,7 +127,7 @@
         android:layout_marginTop="40dp"
         android:text="@string/food_price"
         android:textColor="#3E2723"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -128,7 +139,7 @@
         android:layout_marginTop="40dp"
         android:text="@string/upload_image"
         android:textColor="#3E2723"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -137,14 +148,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="23dp"
         android:text="@string/food_description"
         android:textColor="#3E2723"
-        android:textSize="24sp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/bigImg3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/delImg2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView25"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/img_url"
+        android:textColor="#3E2723"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/bigImg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <ImageView
         android:id="@+id/imgview_image"
@@ -164,18 +191,16 @@
         android:text="@string/btn_upload"
         android:textSize="8sp"
         app:cornerRadius="?attr/listPreferredItemPaddingLeft"
-        app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintEnd_toStartOf="@+id/delImg2"
         app:layout_constraintHorizontal_bias="0.583"
         app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/btn_browse"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_browse" />
 
     <Button
         android:id="@+id/btn_browse"
         android:layout_width="71dp"
         android:layout_height="38dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:backgroundTint="@color/light_black"
         android:text="@string/btn_browse"
         android:textSize="8sp"
@@ -189,7 +214,7 @@
         android:id="@+id/btn_add"
         android:layout_width="120dp"
         android:layout_height="46dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="3dp"
         android:backgroundTint="@color/light_black"
         android:onClick="CreateData"
         android:text="@string/btn_add"
@@ -197,10 +222,10 @@
         app:cornerRadius="?attr/listPreferredItemPaddingLeft"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bigImg3"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.078" />
 
     <EditText
         android:id="@+id/et_category"
@@ -241,6 +266,18 @@
         app:layout_constraintTop_toTopOf="@+id/bigImg2" />
 
     <EditText
+        android:id="@+id/et_imgurl"
+        android:layout_width="161dp"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/light_grey"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/bigImg"
+        app:layout_constraintEnd_toEndOf="@+id/bigImg"
+        app:layout_constraintStart_toStartOf="@+id/bigImg"
+        app:layout_constraintTop_toTopOf="@+id/bigImg" />
+
+    <EditText
         android:id="@+id/et_fooddescription"
         android:layout_width="271dp"
         android:layout_height="50dp"
@@ -251,21 +288,20 @@
         app:layout_constraintEnd_toEndOf="@+id/bigImg3"
         app:layout_constraintHorizontal_bias="0.468"
         app:layout_constraintStart_toStartOf="@+id/bigImg3"
-        app:layout_constraintTop_toTopOf="@+id/bigImg3"
-        app:layout_constraintVertical_bias="0.428" />
+        app:layout_constraintTop_toTopOf="@+id/bigImg3" />
 
     <ImageView
         android:id="@+id/bigImg3"
-        android:layout_width="318dp"
-        android:layout_height="71dp"
+        android:layout_width="317dp"
+        android:layout_height="61dp"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="44dp"
         android:background="@drawable/textbg"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/bigImg"
         tools:ignore="ImageContrastCheck" />
 
     <androidx.appcompat.widget.Toolbar

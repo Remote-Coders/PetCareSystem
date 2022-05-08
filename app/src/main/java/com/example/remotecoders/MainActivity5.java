@@ -36,7 +36,7 @@ import java.io.InputStream;
 
 public class MainActivity5 extends AppCompatActivity {
 
-    EditText edit_category,edit_name,edit_price,edit_description;
+    EditText edit_category,edit_name,edit_price,edit_description,edit_imgurl;
     Button btn_add,btn_upload,btn_browse;
     ImageView img;
     Uri filepath;
@@ -53,6 +53,7 @@ public class MainActivity5 extends AppCompatActivity {
         edit_name=findViewById(R.id.et_foodname);
         edit_price=findViewById(R.id.et_price);
         edit_description=findViewById(R.id.et_fooddescription);
+        edit_imgurl=findViewById(R.id.et_imgurl);
         btn_add=findViewById(R.id.btn_browse);
         img=(ImageView)findViewById(R.id.imgview_image);
         btn_upload=(Button)findViewById(R.id.btn_upload);
@@ -120,6 +121,7 @@ public class MainActivity5 extends AppCompatActivity {
         edit_name.setText("");
         edit_price.setText("");
         edit_description.setText("");
+        edit_imgurl.setText("");
     }
     public void CreateData(View view){
         dbRef = FirebaseDatabase.getInstance().getReference().child("Food");
@@ -132,11 +134,14 @@ public class MainActivity5 extends AppCompatActivity {
             Toast.makeText(getApplicationContext(),"Please enter a price",Toast.LENGTH_SHORT).show();
         }else if(TextUtils.isEmpty(edit_description.getText().toString())){
             Toast.makeText(getApplicationContext(),"Please enter a description",Toast.LENGTH_SHORT).show();
+        }else if(TextUtils.isEmpty(edit_imgurl.getText().toString())){
+            Toast.makeText(getApplicationContext(),"Please enter a image url",Toast.LENGTH_SHORT).show();
         }else{
             foodobj.setCategory(edit_category.getText().toString().trim());
             foodobj.setName(edit_name.getText().toString().trim());
             foodobj.setPrice(Integer.parseInt(edit_price.getText().toString().trim()));
             foodobj.setDescription(edit_description.getText().toString().trim());
+            foodobj.setImgurl(edit_imgurl.getText().toString().trim());
 
             dbRef.push().setValue(foodobj);
 

@@ -173,5 +173,6 @@
     <string name="welcome_back">WELCOME BACK</string>
     <string name="btn_upload">Upload</string>
     <string name="btn_browse">Browse</string>
+    <string name="img_url">Image Url</string>
 
 </resources>
