@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:elevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/food_img1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/googleg_standard_color_18"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/food_t1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/food_img1"
+            android:text="This is Header Text"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/food_t2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/food_img1"
+            android:layout_below="@+id/food_t1"
+            android:text="This is Description Text"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/food_t3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/food_img1"
+            android:layout_below="@+id/food_t2"
+            android:text="This is Price Text"
+            android:textColor="#FD0000"
+            android:textSize="15dp"/>
+
+        <ImageButton
+            android:id="@+id/dltbtn"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/food_t3"
+            android:layout_marginLeft="255dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/food_img1"
+            android:src="@drawable/ic_delete" />
+
+        <ImageButton
+            android:id="@+id/editbtn"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/food_t3"
+            android:layout_marginLeft="-94dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/dltbtn"
+            android:src="@drawable/ic_edit" />
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

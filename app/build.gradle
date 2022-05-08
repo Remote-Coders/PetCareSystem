@@ -58,8 +58,13 @@ dependencies {
     implementation 'de.hdodenhof:circleimageview:3.1.0'
     //recycler view
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    //card view
     implementation "androidx.cardview:cardview:1.0.0"
+
     //permission image upload
     implementation 'com.karumi:dexter:6.0.2'
+
+    // FirebaseUI for Firebase Realtime Database
+    implementation 'com.firebaseui:firebase-ui-database:8.0.1'
 
 }
