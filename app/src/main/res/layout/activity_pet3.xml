@@ -80,7 +80,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/dogview"
         android:layout_width="151dp"
         android:layout_height="115dp"
         android:layout_marginTop="22dp"
@@ -160,7 +160,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/dogview"
         app:layout_constraintVertical_bias="0.952" />
 
     <TextView
@@ -184,7 +184,7 @@
         android:layout_marginStart="84dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/dogview"
         app:srcCompat="@drawable/ic_paw" />
 
     <TextView

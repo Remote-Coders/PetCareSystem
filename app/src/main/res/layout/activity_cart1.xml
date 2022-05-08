@@ -332,7 +332,6 @@
         android:layout_width="304dp"
         android:layout_height="48dp"
         android:layout_marginTop="484dp"
-        android:background="@drawable/dash_btn"
         android:text="Checkout"
         android:textAllCaps="false"
         android:textSize="20sp"

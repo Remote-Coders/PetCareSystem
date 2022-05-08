@@ -172,7 +172,7 @@
         app:layout_constraintTop_toBottomOf="@+id/button4" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/btn_vetadd"
         android:layout_width="62dp"
         android:layout_height="34dp"
         android:layout_marginTop="28dp"
@@ -191,7 +191,7 @@
         android:layout_marginEnd="52dp"
         android:background="#FFFFFF"
         android:drawableTop="@drawable/ic_ico_dele"
-        app:layout_constraintBottom_toTopOf="@+id/button9"
+        app:layout_constraintBottom_toTopOf="@+id/btn_vetadd"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button3"
         app:layout_constraintVertical_bias="0.219" />
@@ -203,7 +203,7 @@
         android:layout_marginStart="300dp"
         android:background="#FFFFFF"
         android:drawableTop="@drawable/ic_ico_edit"
-        app:layout_constraintBottom_toTopOf="@+id/button9"
+        app:layout_constraintBottom_toTopOf="@+id/btn_vetadd"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button3"
         app:layout_constraintVertical_bias="0.218" />
@@ -218,7 +218,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.855"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button9" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_vetadd" />
 
     <Button
         android:id="@+id/button13"
@@ -230,7 +230,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.789"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button9" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_vetadd" />
 
     <Button
         android:id="@+id/button14"
