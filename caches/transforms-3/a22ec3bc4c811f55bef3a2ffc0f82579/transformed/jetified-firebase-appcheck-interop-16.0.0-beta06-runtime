@@ -1,0 +1,4 @@
+com.google.firebase.appcheck.AppCheckTokenResult
+com.google.firebase.appcheck.interop.AppCheckTokenListener
+com.google.firebase.appcheck.interop.BuildConfig
+com.google.firebase.appcheck.interop.InternalAppCheckTokenProvider

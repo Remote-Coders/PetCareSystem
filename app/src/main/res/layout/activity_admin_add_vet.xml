@@ -183,23 +183,25 @@
     </ImageView>
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/btn_vetadd"
         android:layout_width="152sp"
         android:layout_height="50sp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="@color/lightgreen"
+        android:onClick="CreateVetAds"
         android:text="@string/add"
         android:textSize="15sp"
         app:cornerRadius="?attr/listPreferredItemPaddingRight"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView11"
+        tools:ignore="UsingOnClickInXml" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/et_vetname"
         android:layout_width="171dp"
         android:layout_height="47dp"
         android:backgroundTint="@color/lightGrey"
@@ -213,7 +215,7 @@
         app:layout_constraintStart_toStartOf="@+id/imageView7" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/et_vetlocation"
         android:layout_width="171dp"
         android:layout_height="40dp"
         android:backgroundTint="@color/lightGrey"
@@ -226,7 +228,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName8"
+        android:id="@+id/et_vetaddress"
         android:layout_width="168dp"
         android:layout_height="65dp"
         android:backgroundTint="@color/lightGrey"
@@ -238,7 +240,7 @@
         app:layout_constraintStart_toStartOf="@+id/imageView10" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName9"
+        android:id="@+id/et_vetoffice"
         android:layout_width="167dp"
         android:layout_height="59dp"
         android:backgroundTint="@color/lightGrey"
@@ -250,7 +252,7 @@
         app:layout_constraintStart_toStartOf="@+id/imageView11" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName6"
+        android:id="@+id/et_vetbio"
         android:layout_width="171dp"
         android:layout_height="47dp"
         android:backgroundTint="@color/lightGrey"
@@ -353,7 +355,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <EditText
-        android:id="@+id/editTextPhone"
+        android:id="@+id/et_vetphone"
         android:layout_width="169dp"
         android:layout_height="39dp"
         android:backgroundTint="@color/lightGrey"

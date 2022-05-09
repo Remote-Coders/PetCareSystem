@@ -96,6 +96,7 @@ public class MainActivity5 extends AppCompatActivity {
 
     }
 
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         if(requestCode==1 && resultCode==RESULT_OK){
@@ -112,6 +113,7 @@ public class MainActivity5 extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
 
     }
+
 
     //Method to clear all user inputs
     public void clearControls(){

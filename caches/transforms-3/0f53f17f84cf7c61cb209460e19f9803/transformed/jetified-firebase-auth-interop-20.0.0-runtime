@@ -1,0 +1,7 @@
+com.google.firebase.auth.FirebaseAuthException
+com.google.firebase.auth.GetTokenResult
+com.google.firebase.auth.internal.IdTokenListener
+com.google.firebase.auth.internal.InternalAuthProvider
+com.google.firebase.internal.InternalTokenProvider
+com.google.firebase.internal.InternalTokenResult
+com.google.firebase.internal.api.FirebaseNoSignedInUserException
