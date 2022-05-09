@@ -41,14 +41,6 @@ public class MainActivity2 extends AppCompatActivity {
 
       );
 
-              @Override
-              public void onClick(View view) {
-                  Intent intent = new Intent(MainActivity2.this,DashActivity2.class);
-                  startActivity(intent);
-              }
-          }
-        );
-
         foodbtn=findViewById(R.id.btn_food);
         foodbtn.setOnClickListener(new View.OnClickListener() {
               @Override
@@ -56,9 +48,6 @@ public class MainActivity2 extends AppCompatActivity {
                   Intent intent = new Intent(MainActivity2.this,MainActivity4.class);
                   startActivity(intent);
               }
-          }
-          );
-
-
+          });
     }
 }

@@ -62,7 +62,7 @@ public class foodAdapter extends FirebaseRecyclerAdapter<ModelFood,foodAdapter.f
 
                 Button btn_foodupdate =myview.findViewById(R.id.btn_foodupdate);
 
-                category.setText(model.getName());
+                category.setText(model.getCategory());
                 name.setText(model.getName());
                 price.setText(String.valueOf(model.getPrice()));
                 description.setText(model.getDescription());

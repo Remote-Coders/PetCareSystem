@@ -114,7 +114,8 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> <!-- sandalika -->
+        </activity>
+        <!-- sandalika -->
         <activity
             android:name=".AdminPetSittiingCrudActivity"
             android:exported="true">
@@ -249,7 +250,8 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> <!-- Mokshika -->
+        </activity>
+        <!-- Mokshika -->
         <activity
             android:name=".DashActivity4"
             android:exported="true">
@@ -348,7 +350,8 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> <!-- harsha -->
+        </activity>
+        <!-- harsha -->
         <activity
             android:name=".Register"
             android:exported="true">
