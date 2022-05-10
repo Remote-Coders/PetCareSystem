@@ -3,11 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-
-
         <entry key="..\:/2yr 2sem/PetCareSystem/PetCareSystem/app/src/main/res/drawable/crd_btn.xml" value="0.2703125" />
         <entry key="..\:/2yr 2sem/PetCareSystem/PetCareSystem/app/src/main/res/drawable/dash_btn.xml" value="0.2703125" />
-
         <entry key="..\:/2yr 2sem/PetCareSystem/PetCareSystem/app/src/main/res/drawable/ic_paw.xml" value="0.2703125" />
         <entry key="..\:/2yr 2sem/PetCareSystem/PetCareSystem/app/src/main/res/font/roboto_medium.xml" value="0.284375" />
         <entry key="..\:/2yr 2sem/PetCareSystem/PetCareSystem/app/src/main/res/layout/activity_cart1.xml" value="0.25416666666666665" />
@@ -22,7 +19,6 @@
         <entry key="..\:/2yr 2sem/PetCareSystem/PetCareSystem/app/src/main/res/layout/activity_pet4.xml" value="0.264" />
         <entry key="..\:/2yr 2sem/PetCareSystem/PetCareSystem/app/src/main/res/layout/activity_pet5.xml" value="0.2" />
         <entry key="..\:/2yr 2sem/PetCareSystem/PetCareSystem/app/src/main/res/layout/activity_pet6.xml" value="0.1609375" />
-
         <entry key="..\:/Users/dilin/Desktop/MAD_PROJECT/PetCareSystem/app/src/main/res/drawable-v24/ic_account.xml" value="0.14322916666666666" />
         <entry key="..\:/Users/dilin/Desktop/MAD_PROJECT/PetCareSystem/app/src/main/res/drawable/adminbtnview.xml" value="0.14322916666666666" />
         <entry key="..\:/Users/dilin/Desktop/MAD_PROJECT/PetCareSystem/app/src/main/res/drawable/dialog_bg.xml" value="0.14322916666666666" />
@@ -51,9 +47,8 @@
         <entry key="..\:/Users/dilin/Desktop/MAD_PROJECT/PetCareSystem/app/src/main/res/layout/activity_main7.xml" value="0.23731884057971014" />
         <entry key="..\:/Users/dilin/Desktop/MAD_PROJECT/PetCareSystem/app/src/main/res/layout/vet_bottom_sheet.xml" value="0.1" />
         <entry key="..\:/Users/dilin/Desktop/MAD_PROJECT/PetCareSystem/app/src/main/res/layout/vet_bottomsheet.xml" value="0.2" />
-
         <entry key="..\:/Y2S2/MAD/PetCareSystem/PetCareSystem/app/src/main/res/layout/activity_main10.xml" value="0.25416666666666665" />
-        <entry key="..\:/Y2S2/MAD/PetCareSystem/PetCareSystem/app/src/main/res/layout/activity_main11.xml" value="0.8" />
+        <entry key="..\:/Y2S2/MAD/PetCareSystem/PetCareSystem/app/src/main/res/layout/activity_main11.xml" value="4.0" />
         <entry key="..\:/Y2S2/MAD/PetCareSystem/PetCareSystem/app/src/main/res/layout/activity_main2.xml" value="0.136" />
         <entry key="..\:/Y2S2/MAD/PetCareSystem/PetCareSystem/app/src/main/res/layout/activity_main3.xml" value="0.12" />
         <entry key="..\:/Y2S2/MAD/PetCareSystem/PetCareSystem/app/src/main/res/layout/activity_main4.xml" value="0.2" />
@@ -62,15 +57,13 @@
         <entry key="..\:/Y2S2/MAD/PetCareSystem/PetCareSystem/app/src/main/res/layout/activity_main7.xml" value="0.264" />
         <entry key="..\:/Y2S2/MAD/PetCareSystem/PetCareSystem/app/src/main/res/layout/activity_main8.xml" value="0.1" />
         <entry key="..\:/Y2S2/MAD/PetCareSystem/PetCareSystem/app/src/main/res/layout/activity_main9.xml" value="0.176" />
-
         <entry key="..\:/Y2S2/MAD/PetCareSystem/PetCareSystem/app/src/main/res/layout/activity_rvactivity.xml" value="0.25416666666666665" />
         <entry key="..\:/Y2S2/MAD/PetCareSystem/PetCareSystem/app/src/main/res/layout/food_update_popup.xml" value="0.25416666666666665" />
+        <entry key="..\:/Y2S2/MAD/PetCareSystem/PetCareSystem/app/src/main/res/layout/foodsinglebox.xml" value="0.2" />
         <entry key="..\:/Y2S2/MAD/PetCareSystem/PetCareSystem/app/src/main/res/layout/foodsinglerow.xml" value="0.2" />
         <entry key="..\:/Y2S2/MAD/PetCareSystem/PetCareSystem/app/src/main/res/layout/layout_fooditem.xml" value="0.17037037037037037" />
         <entry key="..\:/Y2S2/MAD/PetCareSystem/PetCareSystem/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.18854166666666666" />
         <entry key="..\:/Y2S2/MAD/PetCareSystem/PetCareSystem/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.18854166666666666" />
-
-
         <entry key="..\:/Y2S2/MAD/RemoteCoders/app/src/main/res/drawable/foodbg.xml" value="0.2703125" />
         <entry key="..\:/Y2S2/MAD/RemoteCoders/app/src/main/res/drawable/ic_account.xml" value="0.2682291666666667" />
         <entry key="..\:/Y2S2/MAD/RemoteCoders/app/src/main/res/drawable/ic_food.xml" value="0.2682291666666667" />
