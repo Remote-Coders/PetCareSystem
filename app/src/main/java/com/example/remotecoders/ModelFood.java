@@ -5,14 +5,25 @@ public class ModelFood {
     private String name;
     private Integer price;
     private String description;
+    private Integer quantity;
     private String imgurl;
 
-    public ModelFood(String category, String name, Integer price, String description, String imgurl) {
+    public ModelFood(String category, String name, Integer price, String description, String imgurl,Integer quantity) {
         this.category = category;
         this.name = name;
         this.price = price;
         this.description = description;
         this.imgurl = imgurl;
+        this.quantity=quantity;
+
+    }
+
+    public Integer getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
     }
 
     public String getCategory() {

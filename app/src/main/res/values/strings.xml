@@ -49,7 +49,7 @@
     <string name="dog_food1">Cesar</string>
     <string name="dog_food2">Pedigree</string>
     <string name="dog_food3">Chappi</string>
-    <string name="old_price">$150.00</string>
+    <string name="old_price">150</string>
     <string name="new_price">$50.30</string>
     <string name="food_details">Meaw mix Original combines fun shapes and crunchy bites.</string>
     <string name="food_flavour">Rostisserie chicken flavor</string>
@@ -57,7 +57,6 @@
     <string name="back">back</string>
     <string name="one">1</string>
     <string name="pay_now">Pay Now</string>
-    <string name="cart">Cart</string>
     <string name="btn_petsitting">Pet Sitting</string>
     <string name="vet">Vet</string>
     <string name="province1">Western Province</string>
@@ -174,5 +173,7 @@
     <string name="btn_upload">Upload</string>
     <string name="btn_browse">Browse</string>
     <string name="img_url">Image Url</string>
+    <string name="cart_x">x</string>
+    <string name="cart">Cart</string>
 
 </resources>

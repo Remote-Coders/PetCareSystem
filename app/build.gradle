@@ -78,4 +78,6 @@ dependencies {
     // FirebaseUI for Firebase Realtime Database
     implementation 'com.firebaseui:firebase-ui-database:8.0.1'
 
+    implementation 'com.cepheuen.elegant-number-button:lib:1.0.2'
+
 }

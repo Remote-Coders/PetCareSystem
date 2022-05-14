@@ -42,7 +42,13 @@ public class foodAdapter extends FirebaseRecyclerAdapter<ModelFood,foodAdapter.f
         holder.food_t1.setText(model.getName());
         holder.food_t2.setText(model.getDescription());
         holder.food_t3.setText(String.valueOf(model.getPrice()));
-        Glide.with(holder.food_img.getContext()).load(model.getImgurl()).into(holder.food_img);
+//        Glide.with(holder.food_img.getContext()).load(model.getImgurl()).into(holder.food_img);
+        Glide.with(holder.food_img.getContext())
+                .load(model.getImgurl())
+                .placeholder(com.firebase.ui.database.R.drawable.common_google_signin_btn_icon_dark)
+                .circleCrop()
+                .error(com.firebase.ui.database.R.drawable.common_google_signin_btn_icon_dark_normal)
+                .into(holder.food_img);
 
         holder.editbtn.setOnClickListener(new View.OnClickListener() {
 
@@ -50,7 +56,6 @@ public class foodAdapter extends FirebaseRecyclerAdapter<ModelFood,foodAdapter.f
             public void onClick(View view) {
                 final DialogPlus dialogPlus=DialogPlus.newDialog(holder.food_img.getContext())
                         .setContentHolder(new ViewHolder(R.layout.food_update_popup))
-
                         .create();
 
                 View myview=dialogPlus.getHolderView();
@@ -96,8 +101,6 @@ public class foodAdapter extends FirebaseRecyclerAdapter<ModelFood,foodAdapter.f
                                 });
                     }
                 });
-
-
             }
         });
 
@@ -132,7 +135,6 @@ public class foodAdapter extends FirebaseRecyclerAdapter<ModelFood,foodAdapter.f
     @Override
     public foodViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.foodsinglerow,parent,false);
-
         return new foodAdapter.foodViewHolder(view);
     }
 

@@ -14,67 +14,65 @@
         android:padding="16dp">
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/food_img1"
+            android:id="@+id/cart_img1"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_centerVertical="true"
             android:src="@mipmap/ic_launcher"
+            android:visibility="visible"
             app:civ_border_color="#FF000000"
             app:civ_border_width="2dp"
-            android:visibility="visible"
-            tools:visibility="visible"/>
+            tools:visibility="visible" />
 
         <TextView
-            android:id="@+id/food_t1"
+            android:id="@+id/cart_t1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_toRightOf="@+id/food_img1"
+            android:layout_toRightOf="@+id/cart_img1"
             android:text="This is Header Text"
             android:textColor="#000"
             android:textSize="25dp"
             android:textStyle="bold" />
+
         <TextView
-            android:id="@+id/food_t2"
+            android:id="@+id/cart_t2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/cart_t1"
             android:layout_marginLeft="10dp"
-            android:layout_toRightOf="@+id/food_img1"
-            android:layout_below="@+id/food_t1"
-            android:text="This is Description Text"
-            android:textSize="20dp" />
-        <TextView
-            android:id="@+id/food_t3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_toRightOf="@+id/food_img1"
-            android:layout_below="@+id/food_t2"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/cart_img1"
             android:text="This is Price Text"
             android:textColor="#FD0000"
-            android:textSize="15dp"/>
+            android:textSize="20dp" />
 
-        <ImageButton
-            android:id="@+id/dltbtn"
-            android:layout_width="40dp"
+        <TextView
+            android:id="@+id/cart_t3"
+            android:layout_width="22dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/food_t3"
-            android:layout_marginLeft="255dp"
-            android:layout_marginTop="16dp"
-            android:layout_toRightOf="@id/food_img1"
-            android:src="@drawable/ic_delete" />
+            android:layout_below="@+id/cart_t2"
+            android:layout_marginLeft="239dp"
+            android:layout_marginTop="11dp"
+            android:layout_toRightOf="@+id/cart_img1"
+            android:text="1"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-        <ImageButton
-            android:id="@+id/editbtn"
-            android:layout_width="40dp"
+        <TextView
+            android:id="@+id/cart_t4"
+            android:layout_width="18dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/food_t3"
-            android:layout_marginLeft="-94dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginRight="10dp"
-            android:layout_toRightOf="@id/dltbtn"
-            android:src="@drawable/ic_edit" />
+            android:layout_below="@+id/cart_t2"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="11dp"
+            android:layout_toRightOf="@+id/cart_t3"
+            android:text="@string/cart_x"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
     </RelativeLayout>
-
 
 </androidx.cardview.widget.CardView>

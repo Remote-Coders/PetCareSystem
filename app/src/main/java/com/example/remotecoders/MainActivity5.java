@@ -146,7 +146,10 @@ public class MainActivity5 extends AppCompatActivity {
             dbRef.push().setValue(foodobj);
 
             Toast.makeText(getApplicationContext(),"Data inserted successfully!",Toast.LENGTH_SHORT).show();
-            clearControls();
+//            clearControls();
+            Intent intent = new Intent(MainActivity5.this,MainActivity6.class);
+            startActivity(intent);
+
         }
     }
 

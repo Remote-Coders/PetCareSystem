@@ -4,22 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/dark_blue"
-    tools:context=".MainActivity11">
+    android:background="@color/dark_blue">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#081C34"
-        app:itemIconTint="@color/white"
-        app:itemTextColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_nav_menu">
-
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
     <TextView
         android:id="@+id/tv_dogfoods"
@@ -87,26 +73,14 @@
 
     <ImageView
         android:id="@+id/im_food"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="113dp"
+        android:layout_height="95dp"
         android:layout_marginTop="30dp"
         android:contentDescription="@string/todo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_dogfoods"
-        app:srcCompat="@drawable/dog_food5_1" />
-
-    <TextView
-        android:id="@+id/tv_fooddescrip"
-        android:layout_width="254dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/food_flavour"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_foodtype" />
+        app:srcCompat="@mipmap/ic_launcher" />
 
     <TextView
         android:id="@+id/tv_foodtype"
@@ -133,18 +107,6 @@
         app:layout_constraintStart_toEndOf="@+id/tv_foodtype"
         app:layout_constraintTop_toBottomOf="@+id/im_food" />
 
-    <TextView
-        android:id="@+id/tv_newprice"
-        android:layout_width="87dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/new_price"
-        android:textColor="#EC407A"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.425"
-        app:layout_constraintStart_toEndOf="@+id/tv_fooddescrip"
-        app:layout_constraintTop_toBottomOf="@+id/tv_oldprice" />
 
     <TextView
         android:id="@+id/tv_food_description"
@@ -157,7 +119,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.047"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_fooddescrip" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_foodtype" />
 
     <TextView
         android:id="@+id/tv_food_detail"
@@ -172,108 +134,166 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_food_description" />
 
 
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="42dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:contentDescription="@string/todo"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_food_detail"
-        app:layout_constraintVertical_bias="0.023"
-        app:srcCompat="@drawable/ic_baseline_add_circle_outline_24"
-        tools:ignore="ImageContrastCheck" />
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView11"-->
+<!--        android:layout_width="42dp"-->
+<!--        android:layout_height="44dp"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:contentDescription="@string/todo"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tv_food_detail"-->
+<!--        app:layout_constraintVertical_bias="0.023"-->
+<!--        app:srcCompat="@drawable/ic_baseline_remove_circle_outline_24"-->
+<!--        tools:ignore="ImageContrastCheck" />-->
 
-    <EditText
-        android:id="@+id/et_quantity"
-        android:layout_width="54dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
-        android:accessibilityLiveRegion="assertive"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/one"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
-        app:layout_constraintStart_toEndOf="@+id/imageView11"
-        app:layout_constraintTop_toBottomOf="@+id/tv_food_detail"
-        app:layout_constraintVertical_bias="0.0" />
+<!--    <EditText-->
+<!--        android:id="@+id/et_quantity"-->
+<!--        android:layout_width="54dp"-->
+<!--        android:layout_height="52dp"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:accessibilityLiveRegion="assertive"-->
+<!--        android:autofillHints=""-->
+<!--        android:ems="10"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:text="@string/one"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/imageView11"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tv_food_detail"-->
+<!--        app:layout_constraintVertical_bias="0.0" />-->
 
-    <ImageView
-        android:id="@+id/imageView15"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
-        android:contentDescription="@string/todo"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
-        app:layout_constraintStart_toEndOf="@+id/et_quantity"
-        app:layout_constraintTop_toBottomOf="@+id/tv_food_detail"
-        app:layout_constraintVertical_bias="0.028"
-        app:srcCompat="@drawable/ic_baseline_remove_circle_outline_24"
-        tools:ignore="ImageContrastCheck" />
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView15"-->
+<!--        android:layout_width="43dp"-->
+<!--        android:layout_height="43dp"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:contentDescription="@string/todo"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/et_quantity"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tv_food_detail"-->
+<!--        app:layout_constraintVertical_bias="0.028"-->
+<!--        app:srcCompat="@drawable/ic_baseline_add_circle_outline_24"-->
+<!--        tools:ignore="ImageContrastCheck" />-->
+
+    <!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_below="@+id/tv_food_detail"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/buttonCart"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tv_food_detail"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent">-->
+
+<!--    <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton-->
+
+<!--        android:layout_width="188dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="4dp"-->
+<!--        android:layout_marginBottom="184dp"-->
+<!--        android:elevation="6dp"-->
+<!--        android:gravity="center"-->
+<!--        app:finalNumber="10"-->
+<!--        app:initialNumber="1"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:textSize="10dp">-->
+
+<!--    </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>-->
+    <!--    </RelativeLayout>-->
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:id="@+id/buttonCart"
+        android:layout_width="169dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="8dp"
         android:backgroundTint="@color/background_purple"
         android:drawableLeft="@drawable/ic_baseline_shopping_cart_24"
         android:text="@string/add_cart"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
-        app:layout_constraintStart_toEndOf="@+id/imageView15"
-        app:layout_constraintTop_toBottomOf="@+id/tv_food_detail"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="411dp"
-        android:layout_height="49dp"
-        android:background="@color/black"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toEndOf="@+id/imageView33"
+        app:layout_constraintTop_toBottomOf="@+id/tv_imgurl" />
 
     <ImageView
-        android:id="@+id/imageView31"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:contentDescription="@string/todo"
-        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
-        app:layout_constraintStart_toStartOf="@+id/toolbar"
-        app:layout_constraintTop_toTopOf="@+id/toolbar"
-        app:srcCompat="@drawable/ic_baseline_menu_24" />
+        android:id="@+id/imageView32"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_imgurl"
+        app:srcCompat="@drawable/ic_baseline_remove_circle_outline_24" />
 
-    <SearchView
-        android:id="@+id/searchView"
-        android:layout_width="253dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="7dp"
-        android:layout_marginBottom="2dp"
-        android:background="@android:color/darker_gray"
-        android:queryHint="@string/search"
-        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
-        app:layout_constraintCircleRadius="20sp"
+    <ImageView
+        android:id="@+id/imageView33"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/et_quantity"
+        app:layout_constraintTop_toBottomOf="@+id/tv_imgurl"
+        app:srcCompat="@drawable/ic_baseline_add_circle_outline_24" />
+
+    <EditText
+        android:id="@+id/et_quantity"
+        android:layout_width="77dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#F6F6F6"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#FAF7F7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView32"
+        app:layout_constraintTop_toBottomOf="@+id/tv_imgurl" />
+
+    <TextView
+        android:id="@+id/tv_imgurl"
+        android:layout_width="337dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/dark_blue"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.804"
-        app:layout_constraintStart_toEndOf="@+id/imageView31"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.333"
-        tools:targetApi="s">
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_food_detail" />
 
-    </SearchView>
+    <!--        <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_below="@+id/tv_food_detail"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/buttonCart"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tv_food_detail"-->
+<!--        app:layout_constraintVertical_bias="0.963">-->
+
+<!--            <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton-->
+<!--                android:id="@+id/et_quantity"-->
+<!--                android:layout_width="188dp"-->
+<!--                android:layout_height="55dp"-->
+<!--                android:layout_marginStart="12dp"-->
+<!--                android:layout_marginTop="490dp"-->
+<!--                android:elevation="6dp"-->
+<!--                android:gravity="center"-->
+<!--                app:finalNumber="10"-->
+<!--                app:initialNumber="1"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.105"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintVertical_bias="0.139"-->
+<!--                app:textSize="10dp">>-->
+<!--            </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>-->
+
+
+<!--    </RelativeLayout>-->
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

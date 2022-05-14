@@ -26,7 +26,7 @@ public class MainActivity2 extends AppCompatActivity {
                   Intent intent = new Intent(MainActivity2.this, AdminActivityAds.class);
                   startActivity(intent);
               }
-          }
+        }
       );
 
         pets = findViewById(R.id.btn_pets);
@@ -48,6 +48,6 @@ public class MainActivity2 extends AppCompatActivity {
                   Intent intent = new Intent(MainActivity2.this,MainActivity4.class);
                   startActivity(intent);
               }
-          });
+        });
     }
 }

@@ -16,10 +16,87 @@
         app:itemTextColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
         app:menu="@menu/bottom_nav_menu">
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <TextView
+        android:id="@+id/tv_cartview"
+        android:layout_width="95dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/cart"
+        android:textColor="#FFFCFC"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ImageView
+        android:id="@+id/dogview"
+        android:layout_width="34dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="44dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/textbg"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/im_back"
+        android:layout_width="34dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="65dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/textbg"
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="16dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="@+id/im_back"
+        app:layout_constraintEnd_toEndOf="@+id/im_back"
+        app:layout_constraintStart_toStartOf="@+id/im_back"
+        app:layout_constraintTop_toTopOf="@+id/im_back"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+    <ImageView
+        android:id="@+id/im_favourite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="@+id/dogview"
+        app:layout_constraintEnd_toEndOf="@+id/dogview"
+        app:layout_constraintStart_toStartOf="@+id/dogview"
+        app:layout_constraintTop_toTopOf="@+id/dogview"
+        app:srcCompat="@drawable/ic_baseline_favorite_24"
+        tools:ignore="ImageContrastCheck" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="411dp"
+        android:layout_height="646dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cartview" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -52,6 +129,7 @@
         android:layout_marginEnd="7dp"
         android:layout_marginBottom="2dp"
         android:background="@android:color/darker_gray"
+        android:queryHint="@string/search"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar"
         app:layout_constraintCircleRadius="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -63,282 +141,338 @@
 
     </SearchView>
 
-    <TextView
-        android:id="@+id/textView21"
-        android:layout_width="70dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="14dp"
-        android:layout_marginTop="68dp"
-        android:layout_marginEnd="10dp"
-        android:fontFamily="@font/roboto_medium"
-        android:text="@string/cart"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.542"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:id="@+id/bottomNavigationView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="#081C34"-->
+<!--        app:itemIconTint="@color/white"-->
+<!--        app:itemTextColor="@color/white"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:menu="@menu/bottom_nav_menu">-->
 
-    <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="44dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="56dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_vectr" />
+<!--    </com.google.android.material.bottomnavigation.BottomNavigationView>-->
 
-    <ImageView
-        android:id="@+id/imageView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="72dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.763"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/heart" />
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbar"-->
+<!--        android:layout_width="411dp"-->
+<!--        android:layout_height="49dp"-->
+<!--        android:background="@color/black"-->
+<!--        android:minHeight="?attr/actionBarSize"-->
+<!--        android:theme="?attr/actionBarTheme"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
-    <TextView
-        android:id="@+id/textView22"
-        android:layout_width="113dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="124dp"
-        android:text="@string/items"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.23"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView31"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:contentDescription="@string/todo"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/toolbar"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/toolbar"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/toolbar"-->
+<!--        app:srcCompat="@drawable/ic_baseline_menu_24" />-->
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="374dp"
-        android:layout_height="104dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="172dp"
-        android:layout_marginEnd="5dp"
-        android:background="@drawable/curvebutten"
-        android:drawableLeft="@drawable/dogfood1"
-        android:drawingCacheQuality="auto"
-        app:circularflow_defaultRadius="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.432"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <SearchView-->
+<!--        android:id="@+id/searchView"-->
+<!--        android:layout_width="253dp"-->
+<!--        android:layout_height="31dp"-->
+<!--        android:layout_marginStart="60dp"-->
+<!--        android:layout_marginTop="2dp"-->
+<!--        android:layout_marginEnd="7dp"-->
+<!--        android:layout_marginBottom="2dp"-->
+<!--        android:background="@android:color/darker_gray"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/toolbar"-->
+<!--        app:layout_constraintCircleRadius="20sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.804"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/imageView31"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.333"-->
+<!--        tools:targetApi="s">-->
 
-    <Button
-        android:id="@+id/button33"
-        android:layout_width="133dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="176dp"
-        android:background="@drawable/crd_btn"
-        android:text="Pedigree"
-        android:textAllCaps="false"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.442"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    </SearchView>-->
 
-    <Button
-        android:id="@+id/button34"
-        android:layout_width="60dp"
-        android:layout_height="32dp"
-        android:layout_marginTop="216dp"
-        android:background="@drawable/crd_btn"
-        android:text="@string/food1"
-        android:textAllCaps="false"
-        android:textColor="#4E4D4D"
-        android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.421"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <TextView-->
+<!--        android:id="@+id/textView21"-->
+<!--        android:layout_width="70dp"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:layout_marginStart="14dp"-->
+<!--        android:layout_marginTop="68dp"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        android:fontFamily="@font/roboto_medium"-->
+<!--        android:text="@string/cart"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:textSize="24sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.542"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
-    <Button
-        android:id="@+id/button35"
-        android:layout_width="59dp"
-        android:layout_height="32dp"
-        android:layout_marginTop="240dp"
-        android:background="@drawable/crd_btn"
-        android:text="@string/cartp1"
-        android:textColor="#DB0E1B"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.417"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView14"-->
+<!--        android:layout_width="44dp"-->
+<!--        android:layout_height="58dp"-->
+<!--        android:layout_marginStart="60dp"-->
+<!--        android:layout_marginTop="56dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:srcCompat="@drawable/ic_vectr" />-->
 
-    <Button
-        android:id="@+id/button36"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:background="@drawable/crd_btn"
-        android:text="@string/cartm"
-        android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.934"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView16"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="50dp"-->
+<!--        android:layout_marginTop="72dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.763"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:srcCompat="@drawable/heart" />-->
 
-    <Button
-        android:id="@+id/button38"
-        android:layout_width="374dp"
-        android:layout_height="106dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="284dp"
-        android:layout_marginEnd="5dp"
-        android:background="@drawable/curvebutten"
-        android:drawableLeft="@drawable/dogfood2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <TextView-->
+<!--        android:id="@+id/textView22"-->
+<!--        android:layout_width="113dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_marginTop="124dp"-->
+<!--        android:text="@string/items"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:textSize="24sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.23"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button4"-->
+<!--        android:layout_width="374dp"-->
+<!--        android:layout_height="104dp"-->
+<!--        android:layout_marginStart="5dp"-->
+<!--        android:layout_marginTop="172dp"-->
+<!--        android:layout_marginEnd="5dp"-->
+<!--        android:background="@drawable/curvebutten"-->
+<!--        android:drawableLeft="@drawable/dogfood1"-->
+<!--        android:drawingCacheQuality="auto"-->
+<!--        app:circularflow_defaultRadius="10dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.432"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button33"-->
+<!--        android:layout_width="133dp"-->
+<!--        android:layout_height="64dp"-->
+<!--        android:layout_marginTop="176dp"-->
+<!--        android:background="@drawable/crd_btn"-->
+<!--        android:text="Pedigree"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.442"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button34"-->
+<!--        android:layout_width="60dp"-->
+<!--        android:layout_height="32dp"-->
+<!--        android:layout_marginTop="216dp"-->
+<!--        android:background="@drawable/crd_btn"-->
+<!--        android:text="@string/food1"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#4E4D4D"-->
+<!--        android:textSize="10sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.421"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button35"-->
+<!--        android:layout_width="59dp"-->
+<!--        android:layout_height="32dp"-->
+<!--        android:layout_marginTop="240dp"-->
+<!--        android:background="@drawable/crd_btn"-->
+<!--        android:text="@string/cartp1"-->
+<!--        android:textColor="#DB0E1B"-->
+<!--        android:textSize="16sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.417"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button36"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="200dp"-->
+<!--        android:background="@drawable/crd_btn"-->
+<!--        android:text="@string/cartm"-->
+<!--        android:textAllCaps="false"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.934"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button38"-->
+<!--        android:layout_width="374dp"-->
+<!--        android:layout_height="106dp"-->
+<!--        android:layout_marginStart="5dp"-->
+<!--        android:layout_marginTop="284dp"-->
+<!--        android:layout_marginEnd="5dp"-->
+<!--        android:background="@drawable/curvebutten"-->
+<!--        android:drawableLeft="@drawable/dogfood2"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.486"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
 
-    <Button
-        android:id="@+id/button39"
-        android:layout_width="135dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="288dp"
-        android:background="@drawable/crd_btn"
-        android:text="@string/chappi"
-        android:textAllCaps="false"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.409"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <Button-->
+<!--        android:id="@+id/button39"-->
+<!--        android:layout_width="135dp"-->
+<!--        android:layout_height="56dp"-->
+<!--        android:layout_marginTop="288dp"-->
+<!--        android:background="@drawable/crd_btn"-->
+<!--        android:text="@string/chappi"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.409"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
-    <Button
-        android:id="@+id/button42"
-        android:layout_width="59dp"
-        android:layout_height="32dp"
-        android:layout_marginTop="356dp"
-        android:background="@drawable/crd_btn"
-        android:text="@string/cartp1"
-        android:textColor="#DB0E1B"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.417"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <Button-->
+<!--        android:id="@+id/button42"-->
+<!--        android:layout_width="59dp"-->
+<!--        android:layout_height="32dp"-->
+<!--        android:layout_marginTop="356dp"-->
+<!--        android:background="@drawable/crd_btn"-->
+<!--        android:text="@string/cartp1"-->
+<!--        android:textColor="#DB0E1B"-->
+<!--        android:textSize="16sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.417"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
-    <Button
-        android:id="@+id/button43"
-        android:layout_width="116dp"
-        android:layout_height="28dp"
-        android:layout_marginTop="336dp"
-        android:background="@drawable/crd_btn"
-        android:text="@string/food3"
-        android:textAllCaps="false"
-        android:textColor="#4E4D4D"
-        android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.447"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <Button-->
+<!--        android:id="@+id/button43"-->
+<!--        android:layout_width="116dp"-->
+<!--        android:layout_height="28dp"-->
+<!--        android:layout_marginTop="336dp"-->
+<!--        android:background="@drawable/crd_btn"-->
+<!--        android:text="@string/food3"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#4E4D4D"-->
+<!--        android:textSize="10sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.447"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
 
-    <Button
+<!--    <Button-->
 
-        android:id="@+id/button44"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="324dp"
-        android:background="@drawable/crd_btn"
-        android:text="@string/cartm"
-        android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.925"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--        android:id="@+id/button44"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="324dp"-->
+<!--        android:background="@drawable/crd_btn"-->
+<!--        android:text="@string/cartm"-->
+<!--        android:textAllCaps="false"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.925"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
-    <Button
-        android:id="@+id/button40"
-        android:layout_width="377dp"
-        android:layout_height="102dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="400dp"
-        android:layout_marginEnd="5dp"
-        android:background="@drawable/curvebutten"
-        android:drawableLeft="@drawable/retriever"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.41"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <Button-->
+<!--        android:id="@+id/button40"-->
+<!--        android:layout_width="377dp"-->
+<!--        android:layout_height="102dp"-->
+<!--        android:layout_marginStart="5dp"-->
+<!--        android:layout_marginTop="400dp"-->
+<!--        android:layout_marginEnd="5dp"-->
+<!--        android:background="@drawable/curvebutten"-->
+<!--        android:drawableLeft="@drawable/retriever"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.41"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
-    <Button
-        android:layout_width="157dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="412dp"
-        android:background="@drawable/crd_btn"
-        android:text="@string/dogname"
-        android:textAllCaps="false"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.559"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <Button-->
+<!--        android:layout_width="157dp"-->
+<!--        android:layout_height="43dp"-->
+<!--        android:layout_marginTop="412dp"-->
+<!--        android:background="@drawable/crd_btn"-->
+<!--        android:text="@string/dogname"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.559"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
-    <Button
-        android:layout_width="71dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="476dp"
-        android:background="@drawable/crd_btn"
-        android:text="@string/cap2"
-        android:textColor="#DB0E1B"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.435"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <Button-->
+<!--        android:layout_width="71dp"-->
+<!--        android:layout_height="25dp"-->
+<!--        android:layout_marginTop="476dp"-->
+<!--        android:background="@drawable/crd_btn"-->
+<!--        android:text="@string/cap2"-->
+<!--        android:textColor="#DB0E1B"-->
+<!--        android:textSize="16sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.435"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
-    <Button
-        android:id="@+id/button41"
-        android:layout_width="95dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="448dp"
-        android:layout_marginEnd="7dp"
-        android:background="@drawable/crd_btn"
-        android:text="@string/addrssdog"
-        android:textAllCaps="false"
-        android:textColor="#4E4D4D"
-        android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.459"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <Button-->
+<!--        android:id="@+id/button41"-->
+<!--        android:layout_width="95dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_marginTop="448dp"-->
+<!--        android:layout_marginEnd="7dp"-->
+<!--        android:background="@drawable/crd_btn"-->
+<!--        android:text="@string/addrssdog"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#4E4D4D"-->
+<!--        android:textSize="10sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.459"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="428dp"
-        android:background="@drawable/crd_btn"
-        android:text="@string/cartm"
-        android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.925"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="428dp"-->
+<!--        android:background="@drawable/crd_btn"-->
+<!--        android:text="@string/cartm"-->
+<!--        android:textAllCaps="false"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.925"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
-    <Button
-        android:id="@+id/button48"
-        android:layout_width="304dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="484dp"
-        android:text="Checkout"
-        android:textAllCaps="false"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+<!--    <Button-->
+<!--        android:id="@+id/button48"-->
+<!--        android:layout_width="304dp"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:layout_marginTop="484dp"-->
+<!--        android:text="Checkout"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.495"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/toolbar" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
